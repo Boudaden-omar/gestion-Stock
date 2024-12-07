@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor
+
 public class Categorie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,5 +31,13 @@ public class Categorie {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public Categorie(Long id, String nom) {
+        this.id = id;
+        this.nom = nom;
+    }
+
+    public Categorie() {
     }
 }
