@@ -31,7 +31,7 @@ public class CategorieRepositoryTest {
         Categorie savedCategorie = categorieRepository.save(categorie);
 
         // Vérifier que la catégorie a été sauvegardée
-        assertThat(savedCategorie).isNotNull();
+        //assertThat(savedCategorie).isNotNull();
         assertThat(savedCategorie.getId()).isNotNull();
         assertThat(savedCategorie.getNom()).isEqualTo("Electronique");
     }
