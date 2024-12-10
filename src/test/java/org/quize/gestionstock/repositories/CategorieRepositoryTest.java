@@ -29,7 +29,7 @@ public class CategorieRepositoryTest {
 
         // Sauvegarder la catégorie
         Categorie savedCategorie = categorieRepository.save(categorie);
-
+        System.out.println("test categorieRepo");
         // Vérifier que la catégorie a été sauvegardée
         assertThat(savedCategorie).isNotNull();
         assertThat(savedCategorie.getId()).isNotNull();
