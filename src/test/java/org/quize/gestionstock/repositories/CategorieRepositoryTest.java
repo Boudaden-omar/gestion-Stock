@@ -25,7 +25,7 @@ public class CategorieRepositoryTest {
     public void testSaveCategorie() {
         // Créer une nouvelle catégorie
         Categorie categorie = new Categorie();
-        categorie.setNom("Electronique");
+        categorie.setNom("Electroniq");
 
         // Sauvegarder la catégorie
         Categorie savedCategorie = categorieRepository.save(categorie);
